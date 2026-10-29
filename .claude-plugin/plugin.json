@@ -1,0 +1,19 @@
+{
+  "name": "session-cap",
+  "version": "1.0.0",
+  "displayName": "Session context cap",
+  "description": "A per-session context cap (200k tokens by default): a Stop hook that trips once at the cap, a /handover skill that writes a handover document from disk, a ledger, a context report and a status line.",
+  "author": {
+    "name": "Arda Ozturk",
+    "url": "https://github.com/OzturkArda"
+  },
+  "commands": {
+    "context": {
+      "content": "Run `python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/session_cap.py\" ctx $ARGUMENTS` and show its table as is. Then name, in one line each, any session marked `HANDOVER DUE` (at the cap with no handover yet) and any session above 80% of the cap.",
+      "description": "Show the context used by recently active sessions against the cap",
+      "argumentHint": "[--hours N] [--cap N]"
+    }
+  },
+  "repository": "https://github.com/OzturkArda/claude-session-cap",
+  "license": "MIT"
+}

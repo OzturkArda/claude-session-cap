@@ -1,0 +1,6 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "python3 -S -E ~/.claude/session-cap/statusline.py"
+  }
+}

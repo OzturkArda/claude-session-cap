@@ -1,0 +1,15 @@
+{
+  "name": "session-cap",
+  "description": "A per-session context cap for Claude Code with a handover skill.",
+  "owner": {
+    "name": "Arda Ozturk",
+    "url": "https://github.com/OzturkArda"
+  },
+  "plugins": [
+    {
+      "name": "session-cap",
+      "source": "./",
+      "description": "A per-session context cap (200k tokens by default): a Stop hook that trips once at the cap, a /handover skill that writes a handover document from disk, a ledger, a context report and a status line."
+    }
+  ]
+}
